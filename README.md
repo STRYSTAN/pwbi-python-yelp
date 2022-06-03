@@ -1,5 +1,5 @@
 # pwbi-python-yelp
-Power BI + Python + Yelp API Project (in progress)
+Power BI + Python + Yelp API Project (IN PROGRESS)
 ![image](https://user-images.githubusercontent.com/106555389/171616789-f19f576b-9a65-4f5f-9394-a14e88df14f6.png)
 ![image](https://user-images.githubusercontent.com/106555389/171616756-4ab4e432-c796-4a25-b5b1-3f1bbc976ba6.png)
 ![image](https://user-images.githubusercontent.com/106555389/171616883-9d9beecd-7526-42db-9d1a-887d29b2f563.png)
