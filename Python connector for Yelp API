@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+from yelpapi import YelpAPI
+yelp_api = YelpAPI('Your API Key')
+
+location = 'Your Location'
+distance_in_miles = 2
+inner_radius = 1
+Categories = ('Restaurant')
+
+def miles_in_meters(x):
+    return(int(x*1609.34))
+
+radius = miles_in_meters(distance_in_miles)
+innerradius = miles_in_meters(inner_radius)
+
+data =[]
+result_array = np.empty([])
+
+for x in Categories:
+    search_results = yelp_api.search_query(term=x,limit=2,location = location,radius = radius)
+    for business in search_results['businesses']:
+        data.append(business)
+df= pd.DataFrame(data)
+#Removing duplicates
+df1 = df.loc[df.astype(str).drop_duplicates().index]
